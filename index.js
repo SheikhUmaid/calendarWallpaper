@@ -147,7 +147,7 @@ src: url(data:font/ttf;base64,AAEAAAAPAIAAAwBwR0RFRqHBfaAAAAIIAAADCkdQT1PFKawVAA
 
 
       .arabic {
-        font-family: 'Amiri-Regular';
+        font-family: 'Amiri';
         font-size: 52px;
         fill: white;
         text-anchor: middle;
