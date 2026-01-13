@@ -11,6 +11,7 @@ const sharp = require('sharp');
 // 1080x2400
 async function generateBlackImage(width = 1080, height = 2400) {
     const now = new Date();
+    now.setDate(now.getDate() + 1);
     const year = now.getFullYear();
     const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
     const totalDays = isLeap ? 366 : 365;
