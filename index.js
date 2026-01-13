@@ -37,9 +37,9 @@ async function generateBlackImage(width = 1080, height = 2400) {
 
     const daysLeft = totalDays - (dayOfYear + 1);
     const textY = topOffset + (rows + 2) * yStep;
-    svgContent += `<text x="${width / 2}" y="${textY}" font-family="consolas" font-size="52" fill="red" text-anchor="middle">${daysLeft} days left</text>`;
-    svgContent += `<text x="${width / 2}" y="${topOffset-20}" font-family="consolas" font-size="52" fill="white" text-anchor="middle">حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ.</text>`;
-    svgContent += `<text x="${width / 2}" y="${topOffset-90}" font-family="arabic" font-size="52" fill="white" text-anchor="middle">يَا حَيُّ يَا قَيُّومُ</text>`;
+    svgContent += `<text x="${width / 2}" y="${textY}" font-family="Arial" font-size="52" fill="red" text-anchor="middle">${daysLeft} days left</text>`;
+    svgContent += `<text x="${width / 2}" y="${topOffset-20}" font-family="Arial" font-size="52" fill="white" text-anchor="middle">حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ.</text>`;
+    svgContent += `<text x="${width / 2}" y="${topOffset-90}" font-family="Arial" font-size="52" fill="white" text-anchor="middle">يَا حَيُّ يَا قَيُّومُ</text>`;
 
     
     const svgBuffer = Buffer.from(`<svg width="${width}" height="${height}">${svgContent}</svg>`);
