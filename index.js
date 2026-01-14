@@ -27,7 +27,7 @@ async function generateBlackImage(width = 1080, height = 2400) {
 
   const dotsPerRow = 14;
   const rows = Math.ceil(totalDays / dotsPerRow);
-  const topOffset = height * 0.20;
+  const topOffset = height * 0.30;
   const gridHeight = height * 0.6;
   const xStep = width / (dotsPerRow + 1);
   const yStep = gridHeight / (rows + 1);
@@ -54,10 +54,10 @@ async function generateBlackImage(width = 1080, height = 2400) {
   ctx.fillStyle = 'white';
   ctx.font = '50px Amiri';
   ctx.textAlign = 'center';
-  ctx.fillText('يَا حَيُّ يَا قَيُّومُ', width / 2, height * 0.150);
+  ctx.fillText('يَا حَيُّ يَا قَيُّومُ', width / 2, height * 0.24);
   
   ctx.font = '50px Amiri';
-  ctx.fillText('حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ', width / 2, height * 0.188);
+  ctx.fillText('حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ', width / 2, height * 0.28);
  const year_percent_left = (daysLeft / totalDays) * 100;
   // Days left
   const textY = topOffset + (rows + 2) * yStep;
