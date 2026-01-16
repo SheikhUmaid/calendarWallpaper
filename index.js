@@ -118,7 +118,7 @@ async function srushtis_wallpaper(width = 1080, height = 2392) {
   ctx.fillText('Chutku Putku', width / 2, height * 0.20);
   
   ctx.font = '50px Amiri';
-  ctx.fillText('College Fees 16 Lacks', width / 2, height * 0.24);
+  ctx.fillText('16L', width / 2, height * 0.24);
  const year_percent_left = (daysLeft / totalDays) * 100;
   // Days left
   const textY = topOffset + (rows + 2) * yStep;
@@ -128,6 +128,11 @@ async function srushtis_wallpaper(width = 1080, height = 2392) {
 
   return canvas.toBuffer('image/png');
 }
+
+
+
+
+
 
 
 app.get('/srushti_wallpaper', async (req, res) => {
